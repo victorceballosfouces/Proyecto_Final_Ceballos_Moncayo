@@ -116,8 +116,8 @@ int entered = -1;
 
 void displaymenu(void) {
   
-  //gpio_set_direction(GPIO_BUTTON, GPIO_MODE_INPUT);
-  //gpio_set_pull_mode(GPIO_BUTTON, GPIO_PULLDOWN_ONLY);
+  gpio_set_direction(GPIO_BUTTON, GPIO_MODE_INPUT);
+  gpio_set_pull_mode(GPIO_BUTTON, GPIO_PULLDOWN_ONLY);
 
 
   int down = digitalRead(25);
